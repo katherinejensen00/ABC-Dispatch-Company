@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Owner</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteOwner.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a class="active" href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_owner_post/" method="post" novalidate>
+        <h3>Id of Owner that will be deleted:</h3>
+        <input type="text" name="owner_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_owner_post/" method="post" novalidate>
+        <h3>Enter in all of the Owner's information and the record of the Owner with that id will be updated:</h3>
+        ID of Owner that will be updated:<br>
+        <input type="text" name="owner_id"><br><br>
+        Owner Social Security Number:<br>
+        <input type="text" name="owner_ssn"><br><br>
+        Owner First Name:<br>
+        <input type="text" name="owner_fname"><br><br>
+        Owner Last Name:<br>
+        <input type="text" name="owner_lname"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>

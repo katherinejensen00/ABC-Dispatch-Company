@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Item</title>
+    <link rel='stylesheet' type='text/css' href='insertItem.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a class="active" href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_item_post/" method="post" novalidate>
+        <h2>Insert Item</h2>
+        Item ID:<br>
+        <input type="text" name="item_id"><br><br>
+        Item Name:<br>
+        <input type="text" name="item_name"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

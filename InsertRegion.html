@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Region</title>
+    <link rel='stylesheet' type='text/css' href='insertRegion.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a class="active" href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_region_post/" method="post" novalidate>
+        <h2>Insert Region</h2>
+        Region ID:<br>
+        <input type="text" name="region_id"><br><br>
+        Region Name:<br>
+        <input type="text" name="region_name"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

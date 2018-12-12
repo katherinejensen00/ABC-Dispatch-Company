@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Warehouse</title>
+    <link rel='stylesheet' type='text/css' href='insertWarehouse.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a class="active" href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_warehouse_post/" method="post" novalidate>
+        <h2>Insert Warehouse</h2>
+        Warehouse ID:<br>
+        <input type="text" name="warehouse_id"><br><br>
+        Warehouse Name:<br>
+        <input type="text" name="warehouse_name"><br><br>
+        Street Addr:<br>
+        <input type="text" name="warehouse_addr"><br><br>
+        City:<br>
+        <input type="text" name="warehouse_city"><br><br>
+        State:<br>
+        <input type="text" name="warehouse_state"><br><br>
+        Zip Code:<br>
+        <input type="text" name="warehouse_zip"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

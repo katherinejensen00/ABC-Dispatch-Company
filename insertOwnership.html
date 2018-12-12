@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Ownership</title>
+    <link rel='stylesheet' type='text/css' href='insertOwnership.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a class="active" href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_ownership_post/" method="post" novalidate>
+        <h2>Insert Warehouse Ownership</h2>
+        Warehouse ID:<br>
+        <input type="text" name="warehouse_id"><br><br>
+        Owner ID:<br>
+        <input type="text" name="owner_id"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

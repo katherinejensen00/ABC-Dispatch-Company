@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Delivery</title>
+    <link rel='stylesheet' type='text/css' href='deleteDelivery.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a class="active" href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_delivery_post/" method="post" novalidate>
+        <h3>Delivery with Truck, Warehouse, and Item ID combo will be Deleted:</h3>
+        ID of Truck:
+        <input type="text" name="truck_id"><br><br>
+        ID of Warehouse:
+        <input type="text" name="warehouse_id"><br><br>
+        ID of Item:
+        <input type="text" name="item_id"><br><br>
+        Quantity:
+        <input type="text" name="quantity"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+    </div>
+  </body>
+</html>

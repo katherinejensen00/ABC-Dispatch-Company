@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Inspector</title>
+    <link rel='stylesheet' type='text/css' href='insertInspector.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a class="active" href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_inspector_post/" method="post" novalidate>
+        <h2>Insert Inspector</h2>
+        Inspector ID:<br>
+        <input type="text" name="inspector_id"><br><br>
+        Inspector Social Security Number:<br>
+        <input type="text" name="inspector_ssn"><br><br>
+        Inspector Name:<br>
+        <input type="text" name="inspector_name"><br><br>
+        Inspector Start Date (yyyy-MM-dd):<br>
+        <input type="text" name="inspector_start"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

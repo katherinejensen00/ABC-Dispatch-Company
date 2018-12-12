@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Ownership</title>
+    <link rel='stylesheet' type='text/css' href='deleteOwnership.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a class="active" href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_ownership_post/" method="post" novalidate>
+        <h3>Ownership with Warehouse and Owner ID combo will be Deleted:</h3>
+        ID of Warehouse:
+        <input type="text" name="warehouse_id"><br><br>
+        ID of Owner:
+        <input type="text" name="owner_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Owner</title>
+    <link rel='stylesheet' type='text/css' href='insertOwner.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a class="active" href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_owner_post/" method="post" novalidate>
+        <h2>Insert Warehouse Owner</h2>
+        Warehouse Owner ID:<br>
+        <input type="text" name="owner_id"><br><br>
+        Owner Social Security Number:<br>
+        <input type="text" name="owner_ssn"><br><br>
+        Owner First Name:<br>
+        <input type="text" name="owner_fname"><br><br>
+        Owner Last Name:<br>
+        <input type="text" name="owner_lname"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>

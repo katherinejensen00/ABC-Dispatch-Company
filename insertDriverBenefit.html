@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Driver's Benefit</title>
+    <link rel='stylesheet' type='text/css' href='insertDriverBenefit.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a class="active" href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_driver_benefit_post/" method="post" novalidate>
+        <h2>Insert Driver's Benefit</h2>
+        Driver ID:<br>
+        <input type="text" name="driver_id"><br><br>
+        Benefit ID:<br>
+        <input type="text" name="benefit_id"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+      <form action="/delete_driver_benefit_post/" method="post" novalidate>
+        <h2> The following Driver and Benefit ID combo will be deleted:</h2>
+        Id of Driver that will be deleted:
+        <input type="text" name="driver_id"><br><br>
+        Id of Benefit that will be deleted:
+        <input type="text" name="benefit_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+    </div>
+  </body>
+</html>

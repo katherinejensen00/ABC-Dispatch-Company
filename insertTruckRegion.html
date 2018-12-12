@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Truck Region</title>
+    <link rel='stylesheet' type='text/css' href='insertTruckRegion.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a class="active" href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_truck_region_post/" method="post" novalidate>
+        <h2>Insert Truck Region</h2>
+        Truck ID:<br>
+        <input type="text" name="truck_id"><br><br>
+        Region ID:<br>
+        <input type="text" name="region_id"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+      <form action="/delete_truck_region_post/" method="post" novalidate>
+        <h3> The following Truck and Region ID combo will be deleted:</h3>
+        Id of Truck that will be deleted:
+        <input type="text" name="truck_id"><br><br>
+        Id of Region that will be deleted:
+        <input type="text" name="region_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+    </div>
+  </body>
+</html>

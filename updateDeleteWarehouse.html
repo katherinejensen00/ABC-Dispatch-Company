@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Warehouse</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteWarehouse.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a class="active" href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_warehouse_post/" method="post" novalidate>
+        <h3>Id of Warehouse that will be deleted:</h3>
+        <input type="text" name="warehouse_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_warehouse_post/" method="post" novalidate>
+        <h3>Enter in all of the Warehouse's information and the record of the Warehouse with that id will be updated:</h3>
+        ID of Warehouse that will be updated:<br>
+        <input type="text" name="warehouse_id"><br><br>
+        Warehouse Name:<br>
+        <input type="text" name="warehouse_name"><br><br>
+        Street Addr:<br>
+        <input type="text" name="warehouse_addr"><br><br>
+        City:<br>
+        <input type="text" name="warehouse_city"><br><br>
+        State:<br>
+        <input type="text" name="warehouse_state"><br><br>
+        Zip Code:<br>
+        <input type="text" name="warehouse_zip"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>

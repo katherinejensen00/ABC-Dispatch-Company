@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Loading Dock</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteLoadingDock.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a class="active" href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_loading_dock_post/" method="post" novalidate>
+        <h3>Loading Dock with Loading Dock Number and Warehouse ID combo will be Deleted:</h3>
+        Loading Dock Number:
+        <input type="text" name="loading_dock_number"><br><br>
+        ID of Warehouse:
+        <input type="text" name="warehouse_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_loading_dock_post/" method="post" novalidate>
+        <h3>Enter in all of the Loading Dock's information and the record with the combination of Loading Dock Number and Warehouse ID will be updated:</h3>
+        Number of Loading Dock that will be updated:<br>
+        <input type="text" name="loading_dock_number"><br><br>
+        ID of Warehouse whose Loading Dock will be updated:<br>
+        <input type="text" name="warehouse_id"><br><br>
+        Number Of Deliveries:<br>
+        <input type="text" name="loading_dock_deliveries"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>

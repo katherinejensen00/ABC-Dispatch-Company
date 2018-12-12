@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Inspection</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteInspection.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a class="active" href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_inspection_post/" method="post" novalidate>
+        <h3>Inspection with Inspector and Truck ID combo will be Deleted:</h3>
+        ID of Inspector:
+        <input type="text" name="inspector_id"><br><br>
+        ID of Truck:
+        <input type="text" name="truck_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_inspection_post/" method="post" novalidate>
+        <h3>Enter in all of the Inspection's information and the record of the Inspection with the combination of Inspector and Truck ID will be updated:</h3>
+        ID of Inspection that will be updated:<br>
+        <input type="text" name="inspector_id"><br><br>
+        Id of Truck whose inspection will be updated:<br>
+        <input type="text" name="truck_id"><br><br>
+        Date Last (yyyy-MM-dd):<br>
+        <input type="text" name="date_last"><br><br>
+        Date Next (yyyy-MM-dd):<br>
+        <input type="text" name="date_next"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>

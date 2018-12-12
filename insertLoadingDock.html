@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Loading Dock</title>
+    <link rel='stylesheet' type='text/css' href='insertLoadingDock.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a class="active" href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/insert_loading_dock_post/" method="post" novalidate>
+        <h2>Insert Loading Dock</h2>
+        Loading Dock Number:<br>
+        <input type="text" name="loading_dock_number"><br><br>
+        Warehouse ID:<br>
+        <input type="text" name="warehouse_id"><br><br>
+        Number Of Deliveries:<br>
+        <input type="text" name="loading_dock_deliveries"><br><br>
+        <input type="submit" value="Insert">
+      </form>
+    </div>
+  </body>
+</html>
