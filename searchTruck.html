@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Truck</title>
+    <link rel='stylesheet' type='text/css' href='searchTruck.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a class="active" href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/search_truck_id_post/" method="post" novalidate>
+        <h3>Search For Truck</h3>
+        <p>Pick one of the following ways to look up truck records that match the submitted criterion</p>
+        Search By Truck ID:<br>
+        <input type="text" name="truck_id"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_truck_year_post/" method="post" novalidate>
+        Year Made:<br>
+        <input type="text" name="truck_year_made"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_truck_model_post/" method="post" novalidate>
+        Truck Model:<br>
+        <input type="text" name="truck_model"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_truck_owner_post/" method="post" novalidate>
+        Truck Owner:<br>
+        <input type="text" name="truck_owner"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+    </div>
+  </body>
+</html>

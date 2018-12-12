@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inspections By Month</title>
+    <link rel='stylesheet' type='text/css' href='searchInspection.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a class="active" href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/search_inspection_month_post/" method="post" novalidate>
+        <h3>Search For Inspection By Month</h3>
+        <p>Enter a month to see the upcoming inspections of that month:</p>
+        Month (mm):<br>
+        <input type="text" name="month"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+    </div>
+  </body>
+</html>

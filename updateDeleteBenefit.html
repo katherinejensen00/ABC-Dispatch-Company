@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Benefit</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteBenefit.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a class="active" href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_benefit_post/" method="post" novalidate>
+        <h3>Id of Benefit that will be deleted:</h3>
+        <input type="text" name="benefit_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_benefit_post/" method="post" novalidate>
+        <h3>Enter in all of the Benefit's information and the record of the Benefit with that id will be updated:</h3>
+        ID of Benefit that will be updated:<br>
+        <input type="text" name="benefit_id"><br><br>
+        Benefit Description:<br>
+        <input type="text" name="benefit_description"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>

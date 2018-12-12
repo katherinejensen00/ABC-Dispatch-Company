@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert Driver</title>
+    <link rel='stylesheet' type='text/css' href='searchDriver.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a class="active" href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/search_driver_id_post/" method="post" novalidate>
+        <h3>Search For Driver</h3>
+        <p>Pick one of the following ways to look up driver records that match the submitted criterion</p>
+        Search By Driver ID:<br>
+        <input type="text" name="driver_id"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_driver_name_post/" method="post" novalidate>
+        Search By Driver Name:<br>
+        <input type="text" name="driver_name"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_driver_license_post/" method="post" novalidate>
+        Search By Driver License Number:<br>
+        <input type="text" name="driver_lic_no"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_driver_trainer_post/" method="post" novalidate>
+        Search By Training Driver:<br>
+        <input type="text" name="trainer"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_driver_truck_post/" method="post" novalidate>
+        Search By Truck ID:<br>
+        <input type="text" name="truck_id"><br><br>
+        <input type="submit" value="Search">
+      </form>
+    </div>
+  </body>
+</html>

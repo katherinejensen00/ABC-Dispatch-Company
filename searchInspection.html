@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search For Inspection</title>
+    <link rel='stylesheet' type='text/css' href='searchNextMonth.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a class="active" href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/search_inspector_id_post/" method="post" novalidate>
+        <h3>Search For Inspection</h3>
+        <p>Pick one of the following ways to look up inspection records that match the submitted criterion</p>
+        Search By Inspector ID:<br>
+        <input type="text" name="inspector_id"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_inspection_truck_post/" method="post" novalidate>
+        Truck ID:<br>
+        <input type="text" name="truck_id"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_date_last_post/" method="post" novalidate>
+        Date Last:<br>
+        <input type="text" name="date_last"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+      <form action="/search_date_next_post/" method="post" novalidate>
+        Date Next:<br>
+        <input type="text" name="date_next"><br><br>
+        <input type="submit" value="Search">
+      </form><br>
+    </div>
+  </body>
+</html>

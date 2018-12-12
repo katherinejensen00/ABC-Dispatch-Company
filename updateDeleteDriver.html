@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update/Delete Driver</title>
+    <link rel='stylesheet' type='text/css' href='updateDeleteDriver.css' />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./main.html">Home</a>
+      <a class="active" href="./driver.html">Driver</a>
+      <a href="./truck.html">Truck</a>
+      <a href="./inspection.html">Inspection</a>
+      <a href="./owner.html">Owner</a>
+      <a href="./warehouse.html">Warehouse</a>
+      <a href="./delivery.html">Delivery</a>
+    </div>
+    <div class="main-form">
+      <form action="/delete_driver_post/" method="post" novalidate>
+        <h3>Id of Driver that will be deleted:</h3>
+        <input type="text" name="driver_id"><br><br>
+        <input type="submit" value="Delete"><br><br>
+      </form>
+      <form action="/update_driver_post/" method="post" novalidate>
+        <h3>Enter in all of the Driver's information and the record of the Driver with that id will be updated:</h3>
+        ID of Driver that will be updated:<br>
+        <input type="text" name="driver_id"><br><br>
+        Driver Name:<br>
+        <input type="text" name="driver_name"><br><br>
+        Driver License Number:<br>
+        <input type="text" name="driver_lic_no"><br><br>
+        Trained By:<br>
+        <input type="text" name="trainer"><br><br>
+        Truck ID:<br>
+        <input type="text" name="truck_id"><br><br>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </body>
+</html>
